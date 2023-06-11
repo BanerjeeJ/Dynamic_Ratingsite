@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Poppins:ital,wght@1,500;1,600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background: url(https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L3JtNDU2LTAxNGQteC5qcGc.jpg)
+    no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  text-align: center;
+}
+
+.container {
+  max-width: 950px;
+  margin: 60px 100px;
+  margin-top: 200px;
+  margin-left: 500px;
+  width: 900px;
+  height: 300px;
+  margin: 60px auto 0;
+  margin-top: 150px;
+  background: rgba(236, 234, 234, 0.6);
+  text-align: center;
+  padding: 35px;
+}
+
+.container .info h2 {
+  color: rgb(72, 11, 11);
+  font-size: 55px;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 2px;
+  line-height: 60px;
+  margin-bottom: 30px;
+  display: flex;
+  font-family: "Libre Baskerville", serif;
+  font-family: "Playfair Display", serif;
+}
+
+.content .info h2 span {
+  color: #fff;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+@media (max-width: 480px) {
+  body {
+    background-image: url(https://img.freepik.com/premium-photo/travel-accessories-objects-yellow-background_117255-1354.jpg?w=2000);
+  }
+}
+
+@media (min-width: 1025px) {
+  body {
+    background-image: url(https://img.freepik.com/premium-photo/travel-accessories-objects-yellow-background_117255-1354.jpg?w=2000);
+  }
+}
+
+@media (max-width: 900px) {
+  body {
+    background-image: url(https://img.freepik.com/premium-photo/travel-accessories-objects-yellow-background_117255-1354.jpg?w=2000);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+  }
+
+  ul {
+    padding: 6px 52px;
+    font-weight: bold;
+    font-size: 19px;
+    display: flex;
+    margin-right: 50px;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .container {
+    width: 90%;
+    height: 90%;
+    display: flex;
+  }
+}
+@media (max-width: 6080px) {
+  body {
+    overflow-y: hidden;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .container {
+    width: 90%;
+    height: 90%;
+  }
+}

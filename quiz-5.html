@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Questionnaire-4</title>
+    <link rel="stylesheet" href="quiz-5 style.css" />
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <div class="info">
+          <h2 class="question">What could we do to improve our service?</h2>
+          <br /><br /><br />
+          <form>
+            <textarea placeholder="Write your suggestion here...."></textarea>
+          </form>
+
+          <br /><br /><br /><br /><br />
+          <br />
+          <a href="quiz-4.html" class="info-btn">Back</a>
+          <a href="thankyou.html" class="info-btn">Next></a>
+        </div>
+      </div>
+      <div id="pageFooter">
+        PAGE <span>5/5</span>
+        <style>
+          #pageFooter {
+            margin-top: 15px;
+          }
+        </style>
+      </div>
+    </section>
+
+    <script>
+      const textarea = document.querySelector("textarea");
+      textarea.addEventListener("keyup", (e) => {
+        textarea.style.height = "63px";
+        let scHeight = e.target.scrollHeight;
+
+        textarea.style.height = `${scHeight}px`;
+      });
+
+      function myfunc(event) {
+        event.preventDefault();
+
+        var info = document.getElementById("info").value;
+
+        localStorage.setItem("ls_info", info);
+      }
+    </script>
+  </body>
+</html>
